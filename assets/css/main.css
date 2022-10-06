@@ -87,6 +87,41 @@
 	
  }
 
+
+ /* Opciones whtasapp*/
+
+ .AWhatsapp {
+	 
+    text-decoration: none;
+    color: black;
+	margin-left: auto;
+	margin-right: auto;
+	border: #49c700 2px solid;
+	align-items: center;
+	
+	height: 50px!important;
+	
+	
+	
+}
+
+.colum1{
+	padding-left: auto !important;
+	padding-right: auto !important;
+	align-items: center !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
+	
+	align-items: center !important;
+    text-align: center !important;
+}
+.ej {
+	
+	
+	align-items: center;
+    text-align: center;
+    color: #ffff;
+}
 /* Pagina Generic*/
 
 #BotonHalloween:hover{

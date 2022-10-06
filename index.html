@@ -24,7 +24,7 @@
 
       <!--Boton flotante Whatsapp-->
       <div class="container-boton">
-        <a href=" https://wa.me/573188359387?text=Hola!%20quiero%20comprar%20un%20producto" target="_blank"class="fa-brands fa-whatsapp fa-2xl" id="boton_whatsapp"></a>
+        <a href="javascript:Whatsapp()" class="fa-brands fa-whatsapp fa-2xl" id="boton_whatsapp"></a>
       </div>
 
 
@@ -272,7 +272,7 @@
         Espaldares para silla del comedor.
         </p>
         <ul class="actions special">
-          <li><a href="https://api.whatsapp.com/send?phone=573188359387&text=Hola!%20me%20gusta%20este%20producto%20llamado%20Espaldares%20Navideños%20Color%20Azul " target="_blank"  class="button">$55.000</a></li>
+          <li><a href="https://api.whatsapp.com/send?phone=573188359387&text=Hola!%20me%20gusta%20este%20producto%20llamado%20Espaldares%20Navideños%20Color%20Azul " target="_blank"  class="button">$55.000 (Valor por unidad)</a></li>
         </ul>
       </article>
  
@@ -284,7 +284,10 @@
         <h2>
           <a href="#"
             >Espaldares Navideños <br />
-            Color Rojo</a
+            Color Rojo
+            
+            </a
+            
           >
         </h2>
       </header>
@@ -296,7 +299,7 @@
         Espaldares para silla del comedor.
       </p>
       <ul class="actions special">
-        <li><a href="https://api.whatsapp.com/send?phone=573188359387&text=Hola!%20me%20gusta%20este%20producto%20llamado%20Espaldares%20Navideños%20Color%20Rojo " target="_blank"  class="button">$55.000</a></li>
+        <li><a href="https://api.whatsapp.com/send?phone=573188359387&text=Hola!%20me%20gusta%20este%20producto%20llamado%20Espaldares%20Navideños%20Color%20Rojo " target="_blank"  class="button">$55.000 (Valor por unidad)</a></li>
       </ul>
     </article>
  
@@ -507,7 +510,12 @@
           </section>
           <section>
             <h3>Contacto</h3>
-            <p><a href="#">318 8359387</a></p>
+            <p>
+              <a href="#">318 8359387</a> <br/>
+              <a href="#">316 5418068</a> 
+            
+            </p> 
+           
           </section>
          
          
@@ -547,9 +555,20 @@ Swal.fire({
   title: 'Dentro de poco nos vincularemos a esta red social',
 
 })
+}
 
+function Whatsapp(){
 
+   
+  Swal.fire({
+  title: 'Que numero deseas contactar?',
+html: '  <ul class="actions special"><li><a  href="https://api.whatsapp.com/send?phone=573188359387&text=Hola!%20me%20quiero%20comprar%20un%20producto " target="_blank"  class="button">Whatsapp 1 (318 8359387)</a></li></ul>   <ul class="actions special"><li><a  href="https://api.whatsapp.com/send?phone=573165418068&text=Hola!%20me%20quiero%20comprar%20un%20producto" target="_blank"  class="button">Whatsapp 2 (316 5418068)</a></li> </ul>',
+     /*html:'<div class="row ej">   <a class="AWhatsapp" href=" https://wa.me/573188359387?text=Hola!%quiero%comprar%un%producto" target="_blank">  <div class="col-3 colum1" >  Whatsapp1 <hr/> 3188359387 </div> </a>    <a class="AWhatsapp" href=" https://wa.me/573165418068?text=Hola!%quiero%comprar%un%producto"  target="_blank"> <div class="col-3   colum2">  Whatsapp1 <hr/> 3165418068</div>  </a>  ' , */ 
+    showCloseButton: true,
+   background: ' linear-gradient(#ffff,#d9dfe8)',
 
+   focusConfirm: false,
+  })
 }
     </script>
 
